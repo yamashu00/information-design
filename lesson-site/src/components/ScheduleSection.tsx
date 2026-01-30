@@ -128,7 +128,7 @@ export function ScheduleSection() {
                         <FadeIn delay={300}>
                             <div className="space-y-4">
                                 <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
-                                    <span className="w-1.5 h-6 bg-indigo-600 rounded-full"></span>
+                                    <span className="w-1.5 h-6 bg-primary-600 rounded-full"></span>
                                     情報I 授業スケジュール
                                 </h3>
 

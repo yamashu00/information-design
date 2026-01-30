@@ -22,8 +22,8 @@ export default function Home() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-white/30 dark:bg-black/40 backdrop-blur-[2px]" />
-          <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent dark:from-neutral-950 dark:via-transparent dark:to-transparent" />
+          <div className="absolute inset-0 bg-background/20 dark:bg-black/40 backdrop-blur-[2px]" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent dark:from-background dark:via-transparent dark:to-transparent" />
         </div>
 
         <div className="relative z-10 container mx-auto px-4 text-center">
