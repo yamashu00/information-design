@@ -1,8 +1,11 @@
+```
 import Image from "next/image";
 import Link from "next/link";
 import { FadeIn } from "@/components/FadeIn";
 
-import { RequirementsSection } from "@/components/RequirementsSection"; // Add import
+import { RequirementsSection } from "@/components/RequirementsSection";
+import { PromptCard } from "@/components/PromptCard";
+ // Add import
 
 export default function Home() {
   return (
@@ -91,7 +94,7 @@ export default function Home() {
             ].map((item, index) => (
               <FadeIn key={index} delay={index * 100}>
                 <div className="h-full p-8 bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 shadow-sm hover:shadow-md transition-all hover:border-primary-200 dark:hover:border-primary-800 group">
-                  <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-4 ${item.color}`}>
+                  <span className={`inline - block px - 3 py - 1 rounded - full text - xs font - bold mb - 4 ${ item.color } `}>
                     STEP {item.step}
                   </span>
                   <h3 className="text-xl font-bold text-neutral-900 dark:text-white mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
@@ -107,8 +110,123 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Requirements Section */}
-      <RequirementsSection />
+      {/* Learning Support Section */}
+      <section id="learning-support" className="py-24 bg-neutral-50 dark:bg-neutral-950">
+        <div className="container mx-auto px-4">
+          <FadeIn>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-white mb-4">
+                学習・制作サポート
+              </h2>
+              <p className="text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
+                信頼できる情報源と、制作をスムーズに進めるための便利なツールを紹介します。
+              </p>
+            </div>
+          </FadeIn>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
+            {/* Tools & References */}
+            <FadeIn>
+              <h3 className="text-2xl font-bold text-neutral-900 dark:text-white mb-8 flex items-center gap-3">
+                <span className="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                  </svg>
+                </span>
+                活用ツール・参考サイト
+              </h3>
+              <div className="grid gap-4">
+                {[
+                  {
+                    title: "JapanKnowledge School",
+                    desc: "信頼できる辞書・事典の検索データベース。歴史的事実の確認に。",
+                    url: "https://auth-school.japanknowledge.com/auth_school/login/?authuser=0",
+                    tag: "必須ツール"
+                  },
+                  {
+                    title: "tsutawarudesign.com",
+                    desc: "見やすく、伝わる資料作成のノウハウが詰まったサイト。レイアウトの参考に。",
+                    url: "https://tsutawarudesign.com/sakurei3.html",
+                    tag: "デザイン参考"
+                  },
+                  {
+                    title: "プログラミング教育Blog / スライド",
+                    desc: "わかりやすいスライドデザインの実例集。情報のまとめ方の参考に。",
+                    url: "https://www.programmingeducationblog.com/category/slide/",
+                    tag: "レイアウト参考"
+                  },
+                  {
+                    title: "沖縄県公文書館",
+                    desc: "沖縄戦に関する写真や公的文書などの一次資料を閲覧できます。",
+                    url: "https://www.archives.pref.okinawa.jp/",
+                    tag: "資料・リサーチ"
+                  },
+                  {
+                    title: "Adobe Color",
+                    desc: "色の組み合わせ（配色）を考えるのに便利なツール。キーワードから抽出も可能。",
+                    url: "https://color.adobe.com/ja/explore",
+                    tag: "配色ツール"
+                  }
+                ].map((item, i) => (
+                  <a
+                    key={i}
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-start gap-4 p-4 bg-white dark:bg-neutral-900 rounded-xl border border-neutral-200 dark:border-neutral-800 hover:border-primary-400 dark:hover:border-primary-600 hover:shadow-md transition-all group"
+                  >
+                    <div className="flex-grow">
+                      <div className="flex items-center gap-2 mb-1">
+                        <span className="text-xs font-bold px-2 py-0.5 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400">
+                          {item.tag}
+                        </span>
+                        <h4 className="font-bold text-neutral-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                          {item.title}
+                        </h4>
+                      </div>
+                      <p className="text-sm text-neutral-500 dark:text-neutral-400">
+                        {item.desc}
+                      </p>
+                    </div>
+                    <svg className="w-5 h-5 text-neutral-300 group-hover:text-primary-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                ))}
+              </div>
+            </FadeIn>
+
+            {/* AI Prompts */}
+            <FadeIn delay={200}>
+              <h3 className="text-2xl font-bold text-neutral-900 dark:text-white mb-8 flex items-center gap-3">
+                <span className="w-8 h-8 rounded-lg bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </span>
+                リサーチ用AIプロンプト
+              </h3>
+              <div className="space-y-6">
+                <PromptCard
+                  title="歴史的背景のリサーチ"
+                  description="事実関係を整理するためのプロンプト（※必ず信頼できる情報源で事実確認を行うこと）"
+                  prompt="高校生向けの平和学習ポスターを作成しています。沖縄戦における民間人の被害状況と、それが現在の平和教育にどのように繋がっているか、簡潔に3つのポイントでまとめてください。"
+                />
+                <PromptCard
+                  title="キャッチコピーのアイデア出し"
+                  description="ターゲット（同世代）に響く言葉を探す"
+                  prompt="沖縄への修学旅行を控えた高校2年生に向けたポスターのキャッチコピーを考えています。「継承」「未来」「自分事」をキーワードに、心に響く短めのコピー案を5つ提案してください。"
+                />
+                <PromptCard
+                  title="配色パレットの提案"
+                  description="イメージに合った具体的なカラーコードを知る"
+                  prompt="「悲惨な過去を乗り越え、明るい未来へ向かう沖縄」をテーマにしたポスターの配色を考えています。悲しみだけでなく希望を感じさせる3色のカラーパレットを、HEXコードとその選定理由とともに提案してください。"
+                />
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
 
       {/* Design Basics / Prompt Section */}
       <section id="design-basics" className="py-24 bg-white dark:bg-neutral-900">
