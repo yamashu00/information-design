@@ -109,6 +109,8 @@ export default function Home() {
         </div>
       </section>
 
+      <RequirementsSection />
+
       {/* Learning Support Section */}
       <section id="learning-support" className="py-24 bg-neutral-50 dark:bg-neutral-950">
         <div className="container mx-auto px-4">
