@@ -2,11 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { FadeIn } from "@/components/FadeIn";
 
+import { RequirementsSection } from "@/components/RequirementsSection"; // Add import
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
+        {/* ... (Hero content remains same) ... */}
         <div className="absolute inset-0 z-0">
           <Image
             src="/hero.png"
@@ -41,10 +44,10 @@ export default function Home() {
                 授業を始める
               </Link>
               <Link
-                href="#resources"
+                href="#requirements" // Change to #requirements
                 className="px-8 py-4 bg-white/80 dark:bg-neutral-800/80 hover:bg-white dark:hover:bg-neutral-800 text-neutral-900 dark:text-white rounded-full font-semibold transition-all shadow-lg backdrop-blur-sm border border-neutral-200 dark:border-neutral-700 active:scale-95"
               >
-                素材を見る
+                制作規定を見る
               </Link>
             </div>
           </FadeIn>
@@ -103,6 +106,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Requirements Section */}
+      <RequirementsSection />
 
       {/* Design Basics / Prompt Section */}
       <section id="design-basics" className="py-24 bg-white dark:bg-neutral-900">

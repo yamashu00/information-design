@@ -9,6 +9,7 @@ import { Drawer } from "./Drawer";
 const NAV_ITEMS = [
     { label: "ホーム", href: "/" },
     { label: "授業内容", href: "#curriculum" },
+    { label: "制作規定", href: "#requirements" }, // added
     { label: "デザインの基礎", href: "#design-basics" },
     { label: "沖縄素材", href: "#resources" },
 ];
