@@ -1,11 +1,10 @@
-```
 import Image from "next/image";
 import Link from "next/link";
 import { FadeIn } from "@/components/FadeIn";
 
 import { RequirementsSection } from "@/components/RequirementsSection";
 import { PromptCard } from "@/components/PromptCard";
- // Add import
+// Add import
 
 export default function Home() {
   return (
@@ -94,7 +93,7 @@ export default function Home() {
             ].map((item, index) => (
               <FadeIn key={index} delay={index * 100}>
                 <div className="h-full p-8 bg-white dark:bg-neutral-900 rounded-2xl border border-neutral-200 dark:border-neutral-800 shadow-sm hover:shadow-md transition-all hover:border-primary-200 dark:hover:border-primary-800 group">
-                  <span className={`inline - block px - 3 py - 1 rounded - full text - xs font - bold mb - 4 ${ item.color } `}>
+                  <span className={`inline - block px - 3 py - 1 rounded - full text - xs font - bold mb - 4 ${item.color} `}>
                     STEP {item.step}
                   </span>
                   <h3 className="text-xl font-bold text-neutral-900 dark:text-white mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
