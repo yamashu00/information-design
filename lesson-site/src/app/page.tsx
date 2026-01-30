@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FadeIn } from "@/components/FadeIn";
 
 import { RequirementsSection } from "@/components/RequirementsSection";
-import { WorksheetSection } from "@/components/WorksheetSection";
+import { ResearchSupportSection } from "@/components/ResearchSupportSection";
 import { PromptCard } from "@/components/PromptCard";
 // Add import
 
@@ -110,7 +110,7 @@ export default function Home() {
         </div>
       </section>
 
-      <WorksheetSection />
+      <ResearchSupportSection />
 
       <RequirementsSection />
 
