@@ -173,6 +173,18 @@ export default function Home() {
                     desc: "色の組み合わせ（配色）を考えるのに便利なツール。キーワードから抽出も可能。",
                     url: "https://color.adobe.com/ja/explore",
                     tag: "配色ツール"
+                  },
+                  {
+                    title: "RESAS（地域経済分析システム）",
+                    desc: "沖縄の産業や観光の動向を「数字」で客観的に分析できます。",
+                    url: "https://resas.go.jp/",
+                    tag: "データ分析"
+                  },
+                  {
+                    title: "おきなわ物語（公式観光情報）",
+                    desc: "沖縄県公認の観光情報サイト。現在の観光施策や旬のトピックが満載。",
+                    url: "https://www.okinawastory.jp/",
+                    tag: "観光情報"
                   }
                 ].map((item, i) => (
                   <a
@@ -307,12 +319,9 @@ export default function Home() {
               さあ、制作をはじめよう。
             </h2>
             <p className="text-xl text-primary-100 mb-10 max-w-2xl mx-auto">
-              必要な素材や詳細なガイドラインは、クラスルームからダウンロードできます。<br />
-              あなたの感性で、平和へのメッセージを形にしてください。
+              インプットした情報を、あなたの言葉とデザインで形にしましょう。<br />
+              伝えたいメッセージの核心を忘れないように。
             </p>
-            <button className="px-10 py-5 bg-white text-primary-700 hover:bg-neutral-100 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 active:scale-95">
-              ガイドラインをダウンロード
-            </button>
           </FadeIn>
         </div>
       </section>
