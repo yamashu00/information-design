@@ -4,6 +4,7 @@ import { FadeIn } from "@/components/FadeIn";
 
 import { RequirementsSection } from "@/components/RequirementsSection";
 import { ResearchSupportSection } from "@/components/ResearchSupportSection";
+import { ScheduleSection } from "@/components/ScheduleSection";
 import { PromptCard } from "@/components/PromptCard";
 // Add import
 
@@ -56,6 +57,8 @@ export default function Home() {
           </FadeIn>
         </div>
       </section>
+
+      <ScheduleSection />
 
       {/* Curriculum Section */}
       <section id="curriculum" className="py-24 bg-neutral-50 dark:bg-neutral-950">
