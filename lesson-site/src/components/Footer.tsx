@@ -12,7 +12,7 @@ export function Footer() {
                         </p>
                     </div>
                     <p className="text-sm text-neutral-500 dark:text-neutral-400">
-                        © {new Date().getFullYear()} School Agent Inc. All rights reserved.
+                        {new Date().getFullYear()} 聖学院中高 情報科 山本周 All rights reserved.
                     </p>
                 </div>
             </div>
