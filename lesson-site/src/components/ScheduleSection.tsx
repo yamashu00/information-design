@@ -17,9 +17,9 @@ export function ScheduleSection() {
             dates: [
                 { d: "1/28(水)", type: "normal" },
                 { d: "1/30(金)", type: "normal" },
-                { d: "2/6(金)", type: "goal", label: "完成目標" },
-                { d: "2/13(金)", type: "check", label: "確認" },
-                { d: "2/18(水)", type: "event", label: "発表" },
+                { d: "2/6(金)", type: "normal" },
+                { d: "2/13(金)", type: "goal", label: "完成目標" },
+                { d: "2/18(水)", type: "check", label: "確認" },
             ],
         },
         {
@@ -159,9 +159,9 @@ export function ScheduleSection() {
                             `}
                                                     >
                                                         <span className={`text-[10px] sm:text-xs font-bold mb-1 ${date.type === 'goal' ? 'text-emerald-600' :
-                                                                date.type === 'check' ? 'text-orange-600' :
-                                                                    date.type === 'event' ? 'text-primary-600' :
-                                                                        'text-neutral-400'
+                                                            date.type === 'check' ? 'text-orange-600' :
+                                                                date.type === 'event' ? 'text-primary-600' :
+                                                                    'text-neutral-400'
                                                             }`}>
                                                             {date.label || `Lesson ${di + 1}`}
                                                         </span>
