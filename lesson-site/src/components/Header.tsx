@@ -10,6 +10,7 @@ const NAV_ITEMS = [
     { label: "ホーム", href: "/" },
     { label: "スケジュール", href: "#schedule" },
     { label: "授業内容", href: "#curriculum" },
+    { label: "各回の資料", href: "#lesson-resources" },
     { label: "記述サポート", href: "#worksheet-support" },
     { label: "制作規定", href: "#requirements" },
     { label: "デザインの基礎", href: "#design-basics" },

@@ -5,6 +5,7 @@ import { FadeIn } from "@/components/FadeIn";
 import { RequirementsSection } from "@/components/RequirementsSection";
 import { ResearchSupportSection } from "@/components/ResearchSupportSection";
 import { ScheduleSection } from "@/components/ScheduleSection";
+import { LessonResourceSection } from "@/components/LessonResourceSection";
 import { PromptCard } from "@/components/PromptCard";
 // Add import
 
@@ -112,6 +113,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <LessonResourceSection />
 
       <ResearchSupportSection />
 
