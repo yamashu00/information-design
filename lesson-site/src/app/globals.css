@@ -6,7 +6,7 @@
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
 
-  /* Orchestration Accent Palette */
+  /* Orchestration Accent Palette (Vibrant Cyan) */
   --color-primary-50: #ecfeff;
   --color-primary-100: #cffafe;
   --color-primary-200: #a5f3fc;
@@ -19,7 +19,8 @@
   --color-primary-900: #164e63;
   --color-primary-950: #083344;
 
-  /* Neutrals: Override with themed scales while maintaining standard contrast flow */
+  /* Overriding standard colors to ensure contrast and theme consistency */
+  --color-white: var(--white);
   --color-neutral-50: var(--neutral-50);
   --color-neutral-100: var(--neutral-100);
   --color-neutral-200: var(--neutral-200);
@@ -39,7 +40,7 @@
 
 :root {
   --background: #fdfcf5;
-  /* Warm Cream */
+  /* Warm Cream (Light Sand) */
   --foreground: #101010;
   --card: #ffffff;
   --card-foreground: #101010;
@@ -47,7 +48,9 @@
   --border: #e2e2d5;
   --grid-color: rgba(0, 0, 0, 0.04);
 
-  /* Light Neutrals (Warm/Elegant Sand) */
+  /* Light Neutrals (Warm/Elegant Sand scale) */
+  --white: #fdfcf5;
+  /* Override white to cream for themed bg-white */
   --neutral-50: #fdfcf5;
   --neutral-100: #f8f7f0;
   --neutral-200: #f1f0e8;
@@ -62,31 +65,38 @@
 }
 
 .dark {
-  --background: #000000;
-  /* Pure Black Background */
-  --foreground: #f5f5f5;
-  --card: #0a0a0a;
-  --card-foreground: #ffffff;
+  /* Updated Dark Mode: Deep Navy/Slate for better separation (Ref: okinawa-multimedia-site) */
+  --background: #0f172a;
+  /* Slate 900 - Deep Navy Base */
+  --foreground: #f8fafc;
+  /* Slate 50 - High contrast text */
+  --card: #1e293b;
+  /* Slate 800 - Visible card surfaces */
+  --card-foreground: #f8fafc;
   --primary: #22d3ee;
-  --border: #1a1a1a;
-  --grid-color: rgba(255, 255, 255, 0.08);
+  --border: #334155;
+  /* Slate 700 - Defined borders */
+  --grid-color: rgba(255, 255, 255, 0.05);
 
-  /* Dark Neutrals (Maintaining contrast: 50 is light text, 900 is dark bg) */
-  --neutral-50: #fafafa;
-  --neutral-100: #f5f5f5;
-  --neutral-200: #e5e5e5;
-  --neutral-300: #d4d4d4;
-  --neutral-400: #a3a3a3;
-  /* Muted Text */
-  --neutral-500: #737373;
-  /* Dimmed Text */
-  --neutral-600: #525252;
-  --neutral-700: #404040;
-  --neutral-800: #1a1a1a;
-  /* Elevated Backgrounds (Cards) */
-  --neutral-900: #0a0a0a;
-  /* Deep Backgrounds (Sections) */
-  --neutral-950: #000000;
+  /* Dark Neutrals (Standard flow, but themed for Navy/Slate) */
+  --white: #ffffff;
+  --neutral-50: #f8fafc;
+  /* Lighter text */
+  --neutral-100: #f1f5f9;
+  --neutral-200: #e2e8f0;
+  --neutral-300: #cbd5e1;
+  --neutral-400: #94a3b8;
+  /* Muted description text */
+  --neutral-500: #64748b;
+  --neutral-600: #475569;
+  --neutral-700: #334155;
+  /* Strong borders */
+  --neutral-800: #1e293b;
+  /* Card backgrounds */
+  --neutral-900: #131c2e;
+  /* Section backgrounds (Darker navy) */
+  --neutral-950: #0f172a;
+  /* Base background */
 }
 
 body {
