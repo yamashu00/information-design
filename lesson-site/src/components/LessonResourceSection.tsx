@@ -73,6 +73,18 @@ export function LessonResourceSection() {
             subtitle: "ポスターへのアウトプット",
             resources: [
                 {
+                    type: "Template",
+                    label: "ポスターのテンプレート・先輩の作品例",
+                    desc: "制作の参考になるテンプレートと、過去の優秀作品集です。",
+                    url: "https://docs.google.com/presentation/d/1X-pFWRMHmfulmFnYOaemsl24Gkqywm1D0cePGDAJF-Q/edit?slide=id.g1f782f9d4c4_1_47#slide=id.g1f782f9d4c4_1_47",
+                    color: "bg-amber-100 dark:bg-amber-950/30 text-amber-600 dark:text-amber-400",
+                    icon: (
+                        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                        </svg>
+                    )
+                },
+                {
                     type: "Work",
                     label: "ポスター制作作業",
                     desc: "これまでのリサーチを元に、デジタルで構成を組み上げます。",
